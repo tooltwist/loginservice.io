@@ -1,0 +1,466 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Installation — Tooltwist</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Tooltwist - A Web Development Platform">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="alternate" hreflang="x-default" href="https://vuejs.org/v2/guide/installation.html">
+    <link rel="alternate" hreflang="zh" href="https://cn.vuejs.org/v2/guide/installation.html">
+    <link rel="alternate" hreflang="ja" href="https://jp.vuejs.org/v2/guide/installation.html">
+    <link rel="alternate" hreflang="ru" href="https://ru.vuejs.org/v2/guide/installation.html">
+    <link rel="alternate" hreflang="ko" href="https://kr.vuejs.org/v2/guide/installation.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://br.vuejs.org/v2/guide/installation.html">
+    <link rel="alternate" hreflang="fr" href="https://fr.vuejs.org/v2/guide/installation.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Installation — Tooltwist">
+    <meta property="og:description" content="Tooltwist - A Web Development Platform">
+    <meta property="og:image" content="https://http://tooltwist.com///images/logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Installation — Tooltwist">
+    <meta name="twitter:description" content="Tooltwist - A Web Development Platform">
+    <meta name="twitter:image" content="https://http://tooltwist.com//images/logo.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
+    <link rel="icon" href="/images/logo.png" type="image/png">
+
+    <meta name="msapplication-TileColor" content="#4fc08d">
+    <meta name="theme-color" content="#4fc08d">
+
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="manifest" href="/manifest.json">
+
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Dosis:500&text=Vue.js' rel='stylesheet' type='text/css'>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- main page styles -->
+    <link rel="stylesheet" href="/css/page.css">
+
+    <!-- this needs to be loaded before guide's inline scripts -->
+    <script src="/js/vue.js"></script>
+    <script>
+      Vue.config.productionTip = false
+      window.PAGE_TYPE = "guide"
+    </script>
+
+    <!-- ga -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-46852172-1', 'http://tooltwist.com/');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- vimeo analytics -->
+    <script type="text/javascript" defer="defer" src="https://extend.vimeocdn.com/ga/72160148.js"></script>
+  </head>
+  <body class="docs">
+    <div id="mobile-bar" >
+      <a class="menu-button"></a>
+      <a class="logo" href="/"></a>
+    </div>
+    <div id="header">
+  <a id="logo" href="/">
+    <img src="/images/logo.png">
+    <span>Tooltwist</span>
+  </a>
+  <ul id="nav">
+    <li>
+  <form id="search-form">
+    <input type="text" id="search-query-nav" class="search-query st-default-search-input">
+  </form>
+</li>
+<li class="nav-dropdown-container learn">
+  <a class="nav-link current">Learn</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><ul>
+      <li><a href="/v2/guide/" class="nav-link current">Guide</a></li>
+      <li><a href="/v2/api/" class="nav-link">API</a></li>
+      <li><a href="/v2/examples/" class="nav-link">Examples</a></li>
+    </ul></li>
+  </ul>
+</li>
+
+
+  </ul>
+</div>
+
+    
+      <div id="main" class="fix-sidebar">
+        
+          
+  <div class="sidebar">
+  <div class="sidebar-inner">
+    <ul class="main-menu">
+      <li>
+  <form id="search-form">
+    <input type="text" id="search-query-sidebar" class="search-query st-default-search-input">
+  </form>
+</li>
+<li class="nav-dropdown-container learn">
+  <a class="nav-link current">Learn</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><ul>
+      <li><a href="/v2/guide/" class="nav-link current">Guide</a></li>
+      <li><a href="/v2/api/" class="nav-link">API</a></li>
+      <li><a href="/v2/examples/" class="nav-link">Examples</a></li>
+    </ul></li>
+  </ul>
+</li>
+
+
+    </ul>
+    <div class="list">
+      
+        <h2>
+          
+          Guide<sup class="beta">beta</sup>
+        </h2>
+        <ul class="menu-root">
+  
+    
+    
+      
+        <li><h3>Essentials</h3></li>
+      
+    
+    <li>
+      <a href="/v2/guide/installation.html" class="sidebar-link current">Installation</a>
+    </li>
+  
+    
+    
+      
+    
+    <li>
+      <a href="/v2/guide/index.html" class="sidebar-link">Get Started</a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="content guide with-sidebar installation-guide">
+  
+    
+      <div id="ad">
+  <script
+    async
+    type="text/javascript"
+    src="//cdn.carbonads.com/carbon.js?serve=CKYIK2QU&placement=vuejsorg"
+    id="_carbonads_js">
+  </script>
+</div>
+
+    
+  
+  
+    <h1>Installation</h1>
+  
+  
+    <p>Nuxt.js is really easy to get started with. A simple project only needs the <code>nuxt</code> dependency.</p>
+<h2 id="Using-Tooltwist-Nuxt-js-Starter-Template"><a href="#Using-Tooltwist-Nuxt-js-Starter-Template" class="headerlink" title="Using Tooltwist Nuxt.js Starter Template"></a>Using Tooltwist Nuxt.js Starter Template</h2><p>To get started quickly, the Tooltwist has created a <a href="https://github.com/tooltwist/nuxt-starter-template" target="_blank" rel="noopener">starter template</a>.</p>
+<p><a href="https://github.com/tooltwist/nuxt-starter-template/archive/master.zip" target="_blank" rel="noopener">Download the .zip</a> starter template or install it with vue-cli:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ vue init tooltwist/nuxt-starter-template my-project</span><br></pre></td></tr></table></figure>
+<p>If <a href="https://github.com/vuejs/vue-cli" target="_blank" rel="noopener">vue-cli</a> is not installed, please install it with <code>npm install -g vue-cli</code></p>
+<p>then install the dependencies:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> &lt;project-name&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<p>and launch the project with:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm run dev</span><br></pre></td></tr></table></figure>
+<p>The application is now running on <a href="http://localhost:3000" target="_blank" rel="noopener">http://localhost:3000</a>.</p>
+<p class="tip">Nuxt.js will listen for file changes inside the <code>pages</code> directory, so there is no need to restart the application when adding new pages.</p>
+
+<p>To discover more about the directory structure of the project: <a href="/guide/directory-structure">Directory Structure Documentation</a>.</p>
+<h2 id="Steps-To-Create-a-Project-Manually"><a href="#Steps-To-Create-a-Project-Manually" class="headerlink" title="Steps To Create a Project Manually"></a>Steps To Create a Project Manually</h2><p>These steps were used to create the template directory in this repo.</p>
+<h3 id="Before-Starting"><a href="#Before-Starting" class="headerlink" title="Before Starting"></a>Before Starting</h3><ul>
+<li><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Install nodeJS/npm</a></li>
+<li><a href="https://atom.io/" target="_blank" rel="noopener">Install Atom (editor)</a></li>
+</ul>
+<blockquote>
+<p><b>Notes for Atom<b>:</b></b></p>
+<ul>
+<li>Use ⌘-t to jump to a file quickly.</li>
+<li>Use shift-⌘-t-\ to show the currently open file in the tree on the left.</li>
+</ul>
+</blockquote>
+<h3 id="Create-a-default-Nuxt-project"><a href="#Create-a-default-Nuxt-project" class="headerlink" title="Create a default Nuxt project"></a>Create a default Nuxt project</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ vue init nuxt/starter &lt;project-name&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;project-name&gt;</span><br><span class="line">$ npm install</span><br><span class="line">$ npm run dev</span><br></pre></td></tr></table></figure>
+<p class="tip"><b>Info:</b> replace <code>&lt;project-name&gt;</code> by the name of the project.</p>
+
+
+<p>Open browser at <a href="http://localhost:3000" target="_blank" rel="noopener">http://localhost:3000</a>.</p>
+<blockquote>
+<p><b>Notes<b>:</b></b></p>
+<ul>
+<li>Look at pages/index.vue<ul>
+<li>Make a change and see it appear on the browser.</li>
+<li>Notice the 3 sections to the page - &lt;template&gt; contains html, &lt;script&gt; contains Javascript, and &lt;style&gt; contains CSS.</li>
+</ul>
+</li>
+<li>Look at components/AppLogo.vue<ul>
+<li>Contains sections, similar to index.vue, but missing &lt;script&gt; (he &lt;script&gt; and &lt;style&gt; sections are optional).</li>
+<li>Notice that index.vue:<ul>
+<li>imports AppLogo.vue</li>
+<li>registers it as a component</li>
+<li>uses it in the HTML, as &lt;app-logo&gt;&lt;/app-logo&gt;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="Add-Pug-SCSS"><a href="#Add-Pug-SCSS" class="headerlink" title="Add Pug, SCSS"></a>Add Pug, SCSS</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install --save-dev pug@2.0.0-beta6 pug-loader node-sass sass-loader</span><br></pre></td></tr></table></figure>
+<p>Modify <code>pages/index.vue</code> to use Pug:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template lang=&quot;pug&quot;&gt;</span><br><span class="line">  section.container.has-text-centered</span><br><span class="line">    div</span><br><span class="line">      app-logo</span><br><span class="line">      h1.title</span><br><span class="line">        | j1</span><br><span class="line">      h2.subtitle</span><br><span class="line">        | Nuxt.js project</span><br><span class="line">      .links</span><br><span class="line">        a.button--green(href=&quot;https://nuxtjs.org/&quot;, target=&quot;_blank&quot;) Documentation</span><br><span class="line">        a.button--grey(href=&quot;https://github.com/nuxt/nuxt.js&quot;, target=&quot;_blank&quot;) GitHub</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></table></figure>
+<p>Check the page still works.</p>
+<blockquote>
+<p>Notes:</p>
+<ul>
+<li>uses indentation to indicate nesting, which removes the need for closing tags.</li>
+<li>uses CSS-like syntax for tags definitions: <code>h1.title#heading Hello</code> is equivalent to <code>&lt;h1 class=“title” id=“heading”&gt;Hello&lt;/h1&gt;</code></li>
+<li>Everything is assumed a tag unless prfixed with <code>‘|’</code>.</li>
+<li>Indentation must correctly reflect the nesting of the html elements.</li>
+</ul>
+</blockquote>
+<p>Details about ‘pug’ (previously called ‘jade’) can be found at <a href="https://pugjs.org" target="_blank" rel="noopener">https://pugjs.org</a>.</p>
+<h3 id="Add-Bulma-Buefy"><a href="#Add-Bulma-Buefy" class="headerlink" title="Add Bulma / Buefy"></a>Add Bulma / Buefy</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install nuxt-buefy --save</span><br></pre></td></tr></table></figure>
+<p>In <code>nuxt.config.js</code> add:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">modules: [</span><br><span class="line">  [<span class="string">'nuxt-buefy'</span>],</span><br><span class="line">],</span><br><span class="line">buefy: &#123; <span class="attr">defaultIconPack</span>: <span class="string">'fas'</span> &#125;</span><br></pre></td></tr></table></figure>
+<p class="tip">Bulma = CSS library, like Bootstrap but newer and simpler. It makes creating responsive pages easy. See <code>https://bulma.io/documentation</code></p>
+
+<p>Modify <code>pages/index.vue</code>:</p>
+<ul>
+<li><p>Remove the styles (we’ll use Bulma instead):</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Delete the .links section and it’s two buttons.</p>
+</li>
+<li><p>Do alignment using Bulma classes. Modify the template to match this div section.container.has-text-centered br br app-logo</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">section.container.has-text-centered</span><br><span class="line">  br</span><br><span class="line">  h1.title.is-1</span><br><span class="line">    | z58b</span><br><span class="line">  h2.subtitle.is-4</span><br><span class="line">    | Nuxt.js project</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>Restart the server and see how this looks in the browser.</p>
+<ul>
+<li>Add a box using Bulma, below the subtitle, with the same indent as h2:<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">br</span><br><span class="line">.box</span><br><span class="line">  | Some nice text can go inside this box.</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p class="tip"><br>Buefy = Reusable components for VueJS, using Bulma <a href="https://buefy.github.io/#/documentation/start" target="_blank" rel="noopener">https://buefy.github.io/#/documentation/start</a><br><br><br>Bulma only provides CSS. Buefy provides components that extends Bulma’s CSS and may also contain Javascript code. <br></p>
+
+
+<p>Add the following below the box code from above (with the same indent):<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">br</span><br><span class="line">b-collapse(:open=&quot;false&quot;)</span><br><span class="line">  button.button.is-primary(slot=&quot;trigger&quot;) Click me!</span><br><span class="line">  br</span><br><span class="line">  .notification</span><br><span class="line">    .content</span><br><span class="line">      h3.subtitle.is-4 Blurb</span><br><span class="line">      p</span><br><span class="line">        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><br><span class="line">        | Nulla accumsan, metus ultrices eleifend gravida, nulla nunceu lectus.</span><br><span class="line">        | Ut vulputate semper dui. Fusce erat odio, sollicitudin vel.</span><br></pre></td></tr></table></figure></p>
+<p class="tip"><br>Note that the button defined here is NOT the same as the default buttons that came with the generated project. The button—green and button—grey came from <code>layouts/default.vue</code>, whereas classes button and is-primary come from Bulma.<br></p>
+
+
+<h3 id="Add-Font-awesome"><a href="#Add-Font-awesome" class="headerlink" title="Add Font-awesome"></a>Add Font-awesome</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install @nuxtjs/font-awesome --save</span><br></pre></td></tr></table></figure>
+<p>In <code>nuxt.config.js</code> add:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">modules: [</span><br><span class="line">  [<span class="string">'nuxt-buefy'</span>],</span><br><span class="line">  <span class="string">'@nuxtjs/font-awesome'</span>,</span><br><span class="line">],</span><br></pre></td></tr></table></figure>
+<p>In <code>pages/index.vue</code>:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.box</span><br><span class="line">  i.fa.fa-user</span><br><span class="line">  | &amp;nbsp; Some nice text can go inside this box.</span><br></pre></td></tr></table></figure>
+<p>Restart the server and see how it looks.</p>
+<h3 id="Adjusting-the-Site"><a href="#Adjusting-the-Site" class="headerlink" title="Adjusting the Site"></a>Adjusting the Site</h3><h4 id="Add-a-Header-and-Footer"><a href="#Add-a-Header-and-Footer" class="headerlink" title="Add a Header and Footer"></a>Add a Header and Footer</h4><ul>
+<li>Copy <code>/assets/images/*</code> from new-nuxt-project.zip into your project</li>
+<li><p>Add <code>components/PublicHeader.vue</code>:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template lang=&quot;pug&quot;&gt;</span><br><span class="line">   // styles defined in assets/scss/main.cscc</span><br><span class="line">    nav.navbar.is-dark.is-fixed-top.my-header</span><br><span class="line">      .container</span><br><span class="line">        .navbar-brand</span><br><span class="line">          router-link.navbar-item(to=&quot;/&quot;)</span><br><span class="line">            img(src=&quot;@/assets/images/tooltwist-logo-white.png&quot;, alt=&quot;My Project&quot;)</span><br><span class="line"></span><br><span class="line">          .navbar-burger.burger(data-target=&quot;navbarExampleTransparentExample&quot;, @click=&quot;toggleNavbar()&quot;, v-bind:class=&quot;&#123;&apos;is-active&apos;: isActive&#125;&quot;)</span><br><span class="line">            span</span><br><span class="line">            span</span><br><span class="line">            span</span><br><span class="line">        //- navbar-brand</span><br><span class="line"></span><br><span class="line">        #navbarExampleTransparentExample.navbar-menu(v-bind:class=&quot;&#123;&apos;is-active&apos;: isActive&#125;&quot;)</span><br><span class="line">          .navbar-start</span><br><span class="line">            router-link.navbar-item(to=&quot;/publicPage&quot;) publicPage</span><br><span class="line">            router-link.navbar-item(to=&quot;/user/privatePage&quot;) privatePage</span><br><span class="line">          //- navbar-start</span><br><span class="line"></span><br><span class="line">          .navbar-end</span><br><span class="line">            .navbar-item.has-text-grey-light.is-size-7.has-text-weight-light(v-show=&quot;isLoggedIn&quot;) [ &#123;&#123;userTitle&#125;&#125; ]</span><br><span class="line">            router-link.navbar-item(v-show=&quot;!isLoggedIn&quot;, to=&quot;/login&quot;) Login</span><br><span class="line">            a.navbar-item(v-show=&quot;isLoggedIn&quot;, @click=&quot;doLogout&quot;) Sign out</span><br><span class="line">          //- navbar-end</span><br><span class="line"></span><br><span class="line">        //- navbar-menu</span><br><span class="line">      //- container</span><br><span class="line">    //- nav</span><br><span class="line">  &lt;/template&gt;</span><br><span class="line"></span><br><span class="line">  &lt;script&gt;</span><br><span class="line">  export default &#123;</span><br><span class="line">    data: function() &#123;</span><br><span class="line">      return &#123;</span><br><span class="line">        isActive: false</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">      toggleNavbar() &#123;</span><br><span class="line">        this.isActive = !this.isActive</span><br><span class="line">      &#125;,</span><br><span class="line">      doLogout: function () &#123;</span><br><span class="line">        this.$loginservice.logout()</span><br><span class="line">        this.$router.push(&apos;/&apos;)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    computed: &#123;</span><br><span class="line">      isLoggedIn: function () &#123;</span><br><span class="line">        if (this.$loginservice &amp;&amp; this.$loginservice.user) &#123;</span><br><span class="line">          return true;</span><br><span class="line">        &#125;</span><br><span class="line">        return false;</span><br><span class="line">      &#125;,</span><br><span class="line">      userTitle: function () &#123;</span><br><span class="line">        if (this.$loginservice &amp;&amp; this.$loginservice.user) &#123;</span><br><span class="line">          if (this.$loginservice.user.username) &#123;</span><br><span class="line">            return this.$loginservice.user.username</span><br><span class="line">          &#125; else &#123;</span><br><span class="line">            return this.$loginservice.user.email</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return null</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Add <code>components/PublicFooter.vue</code>:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template lang=&quot;pug&quot;&gt;</span><br><span class="line">   // styles defined in assets/scss/main.cscc</span><br><span class="line">   footer.footer.has-background-dark.has-text-light.has-text-centered.my-footer</span><br><span class="line">     | Copyright &amp;copy; ToolTwist 2018</span><br><span class="line"> &lt;/template&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Add <code>assets/scss/main.scss</code>:<br>This contains styles that will be applied across the website.</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Positioning of the footer</span></span><br><span class="line"><span class="variable">$my-header-height</span>: <span class="number">52</span>;</span><br><span class="line"><span class="variable">$my-footer-height</span>: <span class="number">42</span>;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.above-my-footer</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">0px</span>;</span><br><span class="line">  <span class="attribute">min-height</span>: calc(<span class="number">100vh</span> - #&#123;<span class="variable">$my-footer-height</span>&#125;px);</span><br><span class="line">  <span class="attribute">padding-top</span>: #&#123;<span class="variable">$my-header-height</span>&#125;px;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.my-footer</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="variable">$my-footer-height</span>;</span><br><span class="line">  <span class="attribute">padding-top</span>: <span class="number">8px</span>;</span><br><span class="line">  <span class="attribute">padding-bottom</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">border-top</span>: solid <span class="number">1px</span> <span class="number">#e0e0e0</span>;</span><br><span class="line">  <span class="attribute">border-bottom</span>: solid <span class="number">1px</span> <span class="number">#e0e0e0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Load the styles globally, by adding it to <code>nuxt.config.js</code>:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">module.exports = &#123; … css: [ &#123; src: &apos;@/assets/scss/main.scss&apos;, lang: &apos;sass&apos; &#125; ], &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="Update-layouts-default-vue"><a href="#Update-layouts-default-vue" class="headerlink" title="Update layouts/default.vue:"></a>Update <code>layouts/default.vue</code>:</h4><ul>
+<li>remove .button—green and .button-grey and also their hover classes.</li>
+<li>import the header and footer.</li>
+<li>use header and footer on the page</li>
+<li>use the .above-my-footer and .my-footer classes to position the footer div .above-my-footer public-header nuxt<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public-footer.my-footer</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>The page should now have a header and footer.</p>
+<h4 id="Add-a-Couple-of-Pages"><a href="#Add-a-Couple-of-Pages" class="headerlink" title="Add a Couple of Pages"></a>Add a Couple of Pages</h4><ul>
+<li><p>Add <code>pages/publicPage.vue</code>:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">section.container br br h1.title Public Page br | This page can be seen irrespective of whether the user is logged in. &lt;script&gt; &lt;/script&gt; &lt;style&gt; &lt;/style&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Add <code>pages/user/privatePage.vue</code>:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">section.container br br h1.title Private Page br | This page should only be seen when the user is logged in. &lt;script&gt; &lt;/script&gt; &lt;style&gt; &lt;/style&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>You should now be able to navigate to these pages using the navbar at the top of the page.</p>
+<p class="tip"><br>Resize the screen and see how it adjusts. When the screen gets small enough it replaces the menu options with a “burger”, for mobile devices. This functionality is provided by a combination of Bulma and the toggleNavbar() method in PublicHeader.vue.<br></p>
+
+
+<h3 id="Install-libraries"><a href="#Install-libraries" class="headerlink" title="Install libraries"></a>Install libraries</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install axios debounce v-hotkey vue-drag-drop vue-froala-wysiwyg vue-split-panel vue-awesome --save</span><br><span class="line"></span><br><span class="line">npm install vue-loginservice vue-contentservice --save</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>In nuxt.config.js:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> nodeExternals = <span class="built_in">require</span>(<span class="string">'webpack-node-externals'</span>)  </span><br><span class="line"><span class="keyword">const</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>)  </span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;  </span><br><span class="line">  …  </span><br><span class="line">  build: &#123;  </span><br><span class="line">    …  </span><br><span class="line">    extend…  </span><br><span class="line"></span><br><span class="line">    plugins: [</span><br><span class="line">      <span class="comment">/*</span></span><br><span class="line"><span class="comment">       *  These are the Webpack plugins (not to be mistaken for Nuxt plugins)</span></span><br><span class="line"><span class="comment">       *  https://nuxtjs.org/faq/webpack-plugins/</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">      <span class="comment">// https://nuxtjs.org/faq/webpack-plugins/</span></span><br><span class="line">      <span class="comment">// https://github.com/nuxt/nuxt.js/issues/843</span></span><br><span class="line">      <span class="keyword">new</span> webpack.ProvidePlugin(&#123;</span><br><span class="line">        $: <span class="string">'jquery'</span>,</span><br><span class="line">        jQuery: <span class="string">'jquery'</span>,</span><br><span class="line">        <span class="string">'window.jQuery'</span>: <span class="string">'jquery'</span></span><br><span class="line">      &#125;)</span><br><span class="line">    ],</span><br><span class="line">  &#125;,</span><br><span class="line">  …</span><br><span class="line">  plugins: [</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">     *  These are our Nuxt plugins, defined in the /plugins directory.</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    &#123; <span class="attr">src</span>: <span class="string">'~plugins/vue-awesome.js'</span>, <span class="attr">ssr</span>: <span class="literal">true</span> &#125;,</span><br><span class="line">    &#123; <span class="attr">src</span>: <span class="string">'~plugins/vue-loginservice.js'</span>, <span class="attr">ssr</span>: <span class="literal">false</span> &#125;,</span><br><span class="line">    &#123; <span class="attr">src</span>: <span class="string">'~plugins/vue-contentservice.js'</span>, <span class="attr">ssr</span>: <span class="literal">false</span> &#125;,</span><br><span class="line">    &#123; <span class="attr">src</span>: <span class="string">'~/plugins/nuxt-drag-drop.js'</span>, <span class="attr">ssr</span>: <span class="literal">true</span> &#125;,</span><br><span class="line">    &#123; <span class="attr">src</span>: <span class="string">'~/plugins/nuxt-froala.js'</span>, <span class="attr">ssr</span>: <span class="literal">false</span> &#125;,</span><br><span class="line">    &#123; <span class="attr">src</span>: <span class="string">'~/plugins/nuxt-vue-split-panel.js'</span>, <span class="attr">ssr</span>: <span class="literal">false</span> &#125;,</span><br><span class="line">    &#123; <span class="attr">src</span>: <span class="string">'~plugins/vue-hotkey.js'</span>, <span class="attr">ssr</span>: <span class="literal">false</span> &#125;,</span><br><span class="line">  ],</span><br><span class="line">  modules…</span><br></pre></td></tr></table></figure>
+<p class="tip"><br>Note that there are two plugins sections. The section inside build refers to webpack plugins, while the other refers to Nuxt plugins.<br></p>
+</li>
+<li><p>Copy <code>/plugins/*</code> from <b>new-nuxt-project.zip</b> into your project</p>
+</li>
+<li>Copy <code>/lib</code> from <b>new-nuxt-project.zip</b> into your project</li>
+</ul>
+<h3 id="Using-Tooltwist-Components"><a href="#Using-Tooltwist-Components" class="headerlink" title="Using Tooltwist Components"></a>Using Tooltwist Components</h3><ul>
+<li>Copy <code>/protected-config/websiteConfig.js</code> from <b>new-nuxt-project.zip</b> into your project</li>
+<li>If you already have a Tooltwist account, define a new application, get an APIKey, and update <code>websiteConfig.js</code> with your new APIKey.</li>
+</ul>
+<h5 id="Login-page"><a href="#Login-page" class="headerlink" title="Login page"></a>Login page</h5><ul>
+<li><p>Create <code>pages/login.vue</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template lang=&quot;pug&quot;&gt;</span><br><span class="line">.my-login-page</span><br><span class="line">  section</span><br><span class="line">    br</span><br><span class="line">    br</span><br><span class="line">    loginservice-login(@userchange=&quot;onUserChange&quot;)</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">import PublicHeader from &apos;@/components/PublicHeader.vue&apos;</span><br><span class="line">import PublicFooter from &apos;@/components/PublicFooter.vue&apos;</span><br><span class="line"></span><br><span class="line">export default &#123;</span><br><span class="line">  name: &apos;a3-login-page&apos;,</span><br><span class="line">  components: &#123;</span><br><span class="line">    PublicHeader,</span><br><span class="line">    PublicFooter</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    onUserChange () &#123;</span><br><span class="line">      if (this.$loginservice.user) &#123;</span><br><span class="line">        this.$router.push(&apos;/user/privatePage&apos;)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p>Notice how the menu bar changes when the user logs in:</p>
+<ul>
+<li>Restart the server, and log in with demo/demo.</li>
+<li>The computed value ‘isLoggedIn’ changes from false to true, causing the label to switch from ‘Login’ to ‘Sign out’.</li>
+<li>The computed value ‘userTitle’ gets displayed when the user is logged in.</li>
+</ul>
+</blockquote>
+<h3 id="Redirect-Middleware"><a href="#Redirect-Middleware" class="headerlink" title="Redirect Middleware"></a>Redirect Middleware</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a) Some pages should be visible only when a user is logged in.</span><br><span class="line"></span><br><span class="line">b) Other pages should not be shown when a user is logged in.</span><br><span class="line"></span><br><span class="line">c) Using Nuxt middleware we can intercept the routing to a page, and forward instead to a different page if required.</span><br><span class="line"></span><br><span class="line">d) The Server Side Rendering cannot access browser cookies, so the middleware cannot determine if the user is logged in. Instead it needs to return to a page to the browser that will immediately redirect to the required page, causing the middleware to run again, this time on the browser.</span><br><span class="line"></span><br><span class="line">To provide this functionality, a Nuxt middleware named redirectIfServer is used.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Copy <code>/middleware/only-if-logged-in.js</code> from <b>new-nuxt-project.zip</b> into your project.</li>
+<li>Copy <code>/pages/loginservice-redirect</code> from <b>new-nuxt-project.zip</b> into your project.</li>
+<li>Add the following to <code>nuxt.config.js</code>:<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">   …</span><br><span class="line">   css: […],</span><br><span class="line">  router: &#123;</span><br><span class="line">      middleware: <span class="string">'only-if-logged-in'</span></span><br><span class="line">   &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p class="tip"><br>Note that if you now try to go to privatePage without being logged in, you will be forwarded to the login page. Take a look at the output of npm run dev, and also the Javascript console of your browser and you will see debug messages explaining what the router is doing and why.<br>If you ever wonder why some pages cannot be accessed, this is the first place to look.<br></p>
+
+
+<p>We should stop privatePage from being displayed in the user is not logged in.</p>
+<ul>
+<li>Add the following code in <code>components/PublicHeader.vue</code>:<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#navbarExampleTransparentExample.navbar-menu(v-bind:class=&quot;&#123;&apos;is-active&apos;: isActive&#125;&quot;)</span><br><span class="line">  .navbar-start</span><br><span class="line">    router-link.navbar-item(to=&quot;/publicPage&quot;) publicPage</span><br><span class="line">    router-link.navbar-item(to=&quot;/user/privatePage&quot;, v-show=&quot;isLoggedIn&quot;) privatePage</span><br><span class="line">  //- navbar-start</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="Bounce-Page-required-for-social-media-login"><a href="#Bounce-Page-required-for-social-media-login" class="headerlink" title="Bounce Page (required for social media login)"></a>Bounce Page (required for social media login)</h3><p>When logging in with Facebook/Google/Github/Twitter/LinkedIn the browser redirects to their authentication server, to loginservice, and finally back to an application page with the credentials provided as a URL parameter.  &gt; Our application (via vue-loginservice) saves these credentials in a cookie and will stay logged in until the user logs out.</p>
+<p>This leaves a problem… after logging out, if the user returns to that page via the browser history or the back button, the URL parameters will log the user back in. To avoid this problem, we need to prevent the URL with the authentication parameters being saved in the browser history.</p>
+<p>We do this with a page called loginservice-bounce. Loginservice will jump to this page with the credentials, and this page will save the credentials as a cookie then immediately redirect to the actually required application page, without the URL parameters for the credentials.</p>
+<ul>
+<li><p>Create <code>/pages/loginservice-bounce.vue</code> with the following:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;loginservice-bounce-component/&gt;</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>In <code>plugins/vue-loginservice.js</code> un-comment the faceboook line:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hints: &#123;</span><br><span class="line">  …</span><br><span class="line">  sitename: <span class="string">'ToolTwist'</span>,</span><br><span class="line">  login: &#123;</span><br><span class="line">    facebook: <span class="literal">true</span>,       &lt;----- here</span><br><span class="line">    <span class="comment">// google: true,</span></span><br><span class="line">    <span class="comment">// github: true,</span></span><br><span class="line">    …</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="Account-Page"><a href="#Account-Page" class="headerlink" title="Account Page"></a>Account Page</h3><ul>
+<li><p>Add a page <code>pages/user/account</code>:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;template lang=&quot;pug&quot;&gt;</span><br><span class="line">.a3-account-page</span><br><span class="line">  .a3-above-the-footer</span><br><span class="line">    a3-header</span><br><span class="line">    section.my-header</span><br><span class="line">      .container</span><br><span class="line">        br</span><br><span class="line">        .my-heading</span><br><span class="line">          | My Profile</span><br><span class="line"></span><br><span class="line">    br</span><br><span class="line">    br</span><br><span class="line">    .container</span><br><span class="line">      loginservice-user-details(:tenant=&quot;$loginservice.user.tenant&quot;, :user-id=&quot;$loginservice.user.id&quot;, change-password)</span><br><span class="line"></span><br><span class="line">  a3-footer.a3-the-footer</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Add a link to this new page to <code>/components/PublicHeader</code>:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">router-link.navbar-item(to=&quot;/user/account&quot;, v-show=&quot;isLoggedIn&quot;) Account</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="Next-Steps"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps</h3><p>You now have a demonstration application running, however it’s running against the demonstration user database. To create your own application:</p>
+<ol>
+<li><p>Go to tooltwist.com and register, click on the link in the verification email, create a new application, and allocate an APIKey. Replace the default ApiKey in /protected-config/websiteConfig.js and restart your server. </p>
+</li>
+<li><p>Create a Mailchimp/Mandrill account, and install the registration and forgot-password templates from new-nuxt-project.zip. You will also need to verify that you own the domain used to send emails to users.</p>
+</li>
+<li><p>If you wish to allow users to log in with a social media account, you will need to register the application with Facebook/Github/etc and enter the details into A3. The help links on the config pages explains how to configure Facebook, etc.   </p>
+</li>
+</ol>
+
+  
+  
+    <div class="guide-links">
+      
+      
+      
+      
+        <span style="float: right;"><a href="/v2/guide/index.html">Get Started</a> →</span>
+      
+    </div>
+  
+  <div class="footer">
+      <script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+<div class="bsa-cpc"></div>
+<script>
+  (function(){
+    if(typeof _bsa !== 'undefined' && _bsa) {
+    _bsa.init('default', 'CKYD62QM', 'placement:vuejsorg', {
+      target: '.bsa-cpc',
+      align: 'horizontal',
+      disable_css: 'true'
+    });
+      }
+  })();
+</script>
+
+    Caught a mistake or want to contribute to the documentation?
+    <a href="https://github.com/vuejs/vuejs.org/blob/master/src/v2/guide/installation.md" target="_blank">
+      Edit this page on GitHub!
+    </a>
+  </div>
+</div>
+
+        
+      </div>
+      <script src="/js/smooth-scroll.min.js"></script>
+    
+
+    <!-- main custom script for sidebars, version selects etc. -->
+    <script src="/js/css.escape.js"></script>
+    <script src="/js/common.js"></script>
+
+    <!-- search -->
+    <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/search.css">
+    <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+    <script>
+    [
+      '#search-query-nav',
+      '#search-query-sidebar',
+      '#search-query-menu'
+    ].forEach(function (selector) {
+      if (!document.querySelector(selector)) return
+      // search index defaults to v2
+      var match = window.location.pathname.match(/^\/(v\d+)/)
+      var version = match ? match[1] : 'v2'
+      docsearch({
+      appId: 'BH4D9OD16A',
+      apiKey: '85cc3221c9f23bfbaa4e3913dd7625ea',
+      indexName: 'vuejs',
+      inputSelector: selector,
+      algoliaOptions: { facetFilters: ["version:" + version] }
+      })
+    })
+    </script>
+
+    <!-- fastclick -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      FastClick.attach(document.body)
+    }, false)
+    </script>
+  </body>
+</html>
