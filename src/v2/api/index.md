@@ -1354,7 +1354,7 @@ type: api
     <p>Here's some page content, which will be included in vm.$slots.default, because it's not inside a named slot.</p>
 
     <p slot="footer">
-      Copyright 2016 Evan You
+      Copyright 2018 Tooltwist Ltd.
     </p>
 
     <p>If I have some content down here, it will also be included in vm.$slots.default.</p>.
