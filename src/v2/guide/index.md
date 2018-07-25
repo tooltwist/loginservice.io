@@ -1,12 +1,12 @@
 ---
-title: Get Started
+title: Loginservice.io
 type: guide
 order: 2
 ---
 
 ## Introduction
 
-- Instantly add authentication to a VueJS or Nuxt project.
+- Instantly add user authentication to a VueJS or Nuxt project.
 - Login with username, email address, or Social Media credentials
 - User registration, with confirmation email verification
 - Forgotten password handling via email
@@ -39,6 +39,9 @@ import Loginservice from 'vue-loginservice'
 Vue.use(Loginservice, options)
 ```
 
+#### Try it now in [JSFiddle](https://jsfiddle.net/philcal/eywraw8t/128719/) or [CodeSandbox.io](https://codesandbox.io/s/x3yonn48xw).
+
+![Loginservice Sandbox](/images/loginservice-codesandbox.png)
 
 ### Add to a Nuxt project
 Loginservice is added to a Nuxt project by creating a Nuxt plugin.
