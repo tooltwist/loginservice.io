@@ -7,7 +7,7 @@
   "scripts": {
     "start": "hexo server",
     "build": "node pre-deploy.js && hexo clean && hexo generate",
-    "deploy": "hexo deploy"
+    "deploy":"hexo generate --deploy"
   },
   "dependencies": {
     "hexo": "^3.6.0",

@@ -1284,13 +1284,8 @@ Complex expressions in your templates make them less declarative. We should stri
 {% raw %}<div class="style-example example-bad">{% endraw %}
 #### Bad
 
-``` html
-{{
-  fullName.split(' ').map(function (word) {
-    return word[0].toUpperCase() + word.slice(1)
-  }).join(' ')
-}}
-```
+zzzzzz
+
 {% raw %}</div>{% endraw %}
 
 {% raw %}<div class="style-example example-good">{% endraw %}
