@@ -22,7 +22,7 @@ code_dir: downloads/code
 
 # Directory
 source_dir: src
-public_dir: docs
+public_dir: public
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -99,8 +99,8 @@ markdown:
 offline:
   maximumFileSizeToCacheInBytes: 10485760
   staticFileGlobs:
-    - docs/**/*.{js,html,css,png,jpg,jpeg,gif,svg,eot,ttf,woff,woff2,json,xml}
-  stripPrefix: docs
+    - public/**/*.{js,html,css,png,jpg,jpeg,gif,svg,eot,ttf,woff,woff2,json,xml}
+  stripPrefix: public
   verbose: true
   runtimeCaching:
     # Ad Sources - should be networkFirst
@@ -139,7 +139,7 @@ offline:
 deploy:
   type: git
   repository: git@github.com:tooltwist/loginservice.io.git
-  branch: master
+  branch: gh-pages
   ignore_hidden: false
 
 feed:

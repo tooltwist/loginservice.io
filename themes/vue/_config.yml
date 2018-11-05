@@ -1,7 +1,7 @@
 site_description: "Tooltwist - A Web Development Platform"
 google_analytics: UA-46852172-1
 root_domain: http://tooltwist.com/
-vue_version: 2.5.16
+vue_version: 2.5.17
 
 special_sponsors:
   - url: https://stdlib.com
