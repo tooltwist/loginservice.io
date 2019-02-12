@@ -1,7 +1,7 @@
 ---
-title: Installation
+title: Nuxt Project from Scratch
 type: guide
-order: 1
+order: 4
 ---
 
 Nuxt.js is really easy to get started with. A simple project only needs the `nuxt` dependency.

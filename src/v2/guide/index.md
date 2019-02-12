@@ -1,7 +1,7 @@
 ---
 title: Loginservice.io
 type: guide
-order: 2
+order: 1
 ---
 
 ## Introduction
@@ -99,13 +99,6 @@ methods: {
   }
 }
 ```
-
-
-
-## Your Account Dashboard
-
-Create a free ToolTwist account at http://tooltwist.com, and press `Add Application` to get an APIKey for your application. This dashboard provides user administration, metrics, and other functionality.
-
 
 
 ## Options
